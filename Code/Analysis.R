@@ -6,7 +6,7 @@
 #library() # load our packages here
 
 # Import data
-data <- read.csv("Data/height.csv")
+data <- read.csv("Data_height.csv")
 
 # Explore data
 summary(data)
@@ -57,4 +57,4 @@ CI_lower_t <- mean(data$height) - (se * t_score)
 CI_upper_t <- mean(data$height) + (se * t_score)
 
 # Check our working
-t.test(data$height, conf.level = 0.9, alternative = "two.sided")
+t.test(data$height, conf.level = 0.9, alternative = "two.sided")       

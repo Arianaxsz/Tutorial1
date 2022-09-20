@@ -3,7 +3,7 @@
 #######################
 
 ## import our data
-data <- read.csv("Data/height.csv")
+data <- read.csv("Data_height.csv")
 
 ## REMEMBER: our data are drawn from a sample!
 (x_bar <- mean(data$height)) # not == mu
